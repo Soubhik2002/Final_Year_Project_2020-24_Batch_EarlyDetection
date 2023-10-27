@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <!-- font awesome file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Brain Twist Odyssey</title>
+    <link rel="icon" type="image/x-icon" href="../image/Logo.png">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+        <div class="iicone">
+            <a href="#" class="logo"><i class="fa fa-gamepad" style="font-size:30px"></i>Brain Twist Odyssey</a>
+            <div class="fas fa-bars"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Project</a></li>
+                <li><a href="#service2">Play Game</a></li>
+                <li><a href="#service">Game Levels</a></li>
+                <li><a href="#team">Team</a></li>
+                <!-- <li><a href="https://dementia-prediction.streamlit.app/" target="_blank">Link</a></li> -->
+                <li><a href="#faq">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section id="home" class="home">
+        <img src="./image/Logo.png" alt="this is the picture" height="250px" width="250px">
+        <h1 class="banner">The Mind Marathon Challenge</h1>
+        <h3 class="slogan">Cognitive game series for memory and focus enhancement in dementia care.
+        </h3>
+        <a href="#service2"><button>Start Game</button></a>
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+
+        <div class="fas fa-cog nut1"></div>
+        <div class="fas fa-cog nut2"></div>
+
+
+    </section>
+
+
+    <!-- home section ends -->
+
+
+    <!-- about section starts  -->
+
+    <section id="about" class="about">
+        <h1 class="heading">About Project</h1>
+        <div class="row">
+            <div class="content">
+                <h3>Enhancing Cognitive Health and Predicting Dementia</h3>
+                <p>Welcome to a transformative initiative that merges cutting-edge technology with compassionate care.
+                    Our project is twofold, aimed at bolstering cognitive health and pioneering dementia prediction
+                    through the power of deep learning.
+                </p>
+                <p><b>Cognitive Game for Dementia Patients:</b>
+                    At the heart of our project lies a revolutionary cognitive game meticulously designed to benefit
+                    dementia patients. This interactive experience is tailored to engage and stimulate memory,
+                    attention, and cognitive abilities.</p>
+                <span id="moreText" class="hidden">
+                    <p><b>Dementia Prediction Using Deep Learning:</b>
+                        In parallel, our project employs state-of-the-art deep learning algorithms to predict dementia
+                        with unprecedented accuracy. By analyzing extensive datasets and leveraging machine learning
+                        techniques, we are at the forefront of early detection. This innovation has the potential to
+                        transform the landscape of dementia care, facilitating early interventions and improved patient
+                        outcomes.</p>
+                    <p><b>Our Mission:</b>
+                        We're dedicated to enriching lives through cognitive empowerment and pioneering dementia
+                        prediction.</p>
+                    <p><b>Join Us:</b>
+                        Join our initiative where technology and empathy unite to empower individuals, enhance dementia
+                        care, and shape a brighter future.</p>
+                </span>
+                <button class="btn" id="readMoreButton">read more</button>
+            </div>
+            <div class="image">
+                <img src="./image/mental1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- abuout section ends  -->
+
+    <section id="service2" class="service">
+        <h1 class="heading">7 Levels of Cognitive Challenge</h1>
+        <div class="row" id="levelbutton">
+            <div class="container">
+                <div class="progress-container">
+                    <div class="progress" id="progress"></div>
+                    <div class="circle active">
+                        <a href="./level/indexlevel1.html"><i class="icon fa fa-smile-o"></i>
+                            <div class="caption">Basic<br>Match
+                            </div>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./level/indexlevel2.html"><i class="icon fa fa-cutlery"></i>
+                            <div class="caption">Bomb<br>Alert
+                            </div>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./level/indexlevel3.html"><i class="icon fa fa-coffee"></i>
+                            <div class="caption">Grid<br>Bombs
+                            </div>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./level/indexlevel4.html"><i class="icon fa fa-circle-o"></i>
+                            <div class="caption">Card<br>Clash
+                            </div>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./level/indexlevel5.html"><i class="icon fa fa-sort-numeric-asc"></i>
+                            <div class="caption">Rotating<br> Challenge
+                            </div>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./level/indexlevel6.html"><i class="icon fa fa-cube"></i>
+                            <div class="caption">Swap<br>Shuffle
+                            </div>
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <a href="./level/indexlevel7.html"><i class="icon fa fa-cubes"></i>
+                            <div class="caption">Ultimate<br>Test</div>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="btn" id="prev" disabled>Prev</button>
+                <button class="btn" id="next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- service section starts  -->
+
+    <section id="service" class="service">
+
+        <h1 class="heading">Game Levels</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./image/mental2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Level - 1 (Card Matching Prelude)</h3>
+                <p>Welcome to Level 1, where we lay the foundation for your memory-enhancing journey. Your task is
+                    simple: match identical cards by clicking on them. Follow these steps to play successfully:
+                <ul class="point">
+                    <li>Begin by clicking on any card to reveal its
+                        image.</li>
+                    <li>Take a moment to remember the picture and its
+                        specific position on the grid.</li>
+                    <li>Your goal is to find and click on the card that
+                        shares the same image and position.</li>
+                    <li>Continue this process, pairing up cards until
+                        you've successfully cleared the entire board.</li>
+                </ul>
+                </p>
+
+                <a href="./level/indexlevel1.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Level - 2 (Bombshell Challenge)</h3>
+                <p>BLevel 2 introduces an element of caution – some cards are hiding bombs! Your objective remains the
+                    same – match cards – but now you must exercise extra care. Here's how to play safely:
+                <ul class="point">
+                    <li>Start by clicking on a card to reveal its contents.</li>
+                    <li>Carefully commit the card's picture and its location to memory.</li>
+                    <li>As you search for matching cards, remember to avoid clicking on any that conceal bombs.</li>
+                    <li>If you accidentally click on a bomb card, the game comes to an end, so stay vigilant!</li>
+                </ul>
+                </p>
+                <a href="./level/indexlevel2.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+            <div class="image">
+                <img src="./image/mental3.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+            <div class="image">
+                <img src="./image/mental4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Level - 3 (Explosive Grids)</h3>
+                <p> In Level 3, the complexity increases as multiple grids and more bombs come into play. Navigate these
+                    challenges with these strategic steps:
+                <ul class="point">
+                    <li>Begin by clicking on a card within any of the grids to unveil its image.</li>
+                    <li>Memorize both the picture itself and the precise position where you found it.</li>
+                    <li>Continue matching cards, but exercise caution to steer clear of any hidden bombs.
+                    </li>
+                    <li>Your ultimate goal is to successfully clear all the grids by matching the cards accurately.</li>
+                </ul>
+                </p>
+                <a href="./level/indexlevel3.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Level - 4 (Card Clash Chaos)</h3>
+                <p>As you enter Level 4, the deck grows, and so does the excitement. Achieve success by following these
+                    detailed instructions:
+                <ul class="point">
+                    <li>Click on any card to reveal its image.</li>
+                    <li>Take a moment to memorize both the picture and the position where it resides.</li>
+                    <li>Proceed to match the cards as you've done before, but be mindful of the presence of hidden
+                        bombs.
+                    </li>
+                    <li>To conquer this level, maintain unwavering focus and memory retention as you work to clear the
+                        board.</li>
+                </ul>
+                </p>
+                <a href="./level/indexlevel4.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+            <div class="image">
+                <img src="./image/mental5.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+            <div class="image">
+                <img src="./image/mental8.png" alt="">
+            </div>
+            <div class="content">
+                <h3>level - 5 (Rotation Riddle)</h3>
+                <p>Level 5 introduces a dynamic twist – cards will now rotate like a Rubik's Cube after each successful
+                    match. Play like a pro with these strategic steps:
+                <ul class="point">
+                    <li>Click on a card to uncover it and reveal its image.
+                    </li>
+                    <li>Memorize both the picture and its original position.
+                    </li>
+                    <li>As you continue to match cards, be prepared to adapt to the ever-changing rotations.</li>
+                    <li>To excel in this level, you must keep your concentration high and effectively conquer this
+                        dynamic and engaging challenge.
+                    </li>
+                </ul>
+                </p>
+                <a href="./level/indexlevel5.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="content">
+                <h3>Level - 6 (Grid Swap Shuffle)</h3>
+                <p> Level 6 brings a new dimension to the game as card grids swap positions. Follow these steps to
+                    thrive in this shifting environment:
+                <ul class="point">
+                    <li>Start by revealing cards through clicks, much like in previous levels.
+                    </li>
+                    <li>Memorize the images and their respective positions.
+                    </li>
+                    <li>Continue matching cards, but be aware that certain grids will swap places.
+                    </li>
+                    <li>Success in this level demands vigilance and adaptability as you navigate the grids' shuffling.
+                    </li>
+                </ul>
+                </p>
+
+                <a href="./level/indexlevel6.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+            <div class="image">
+                <img src="./image/mental6.png" alt="">
+            </div>
+
+        </div>
+        <div class="row">
+
+
+            <div class="image">
+                <img src="./image/mental7.png" alt="">
+            </div>
+            <div class="content">
+                <h3>level - 7 (Ultimate Memory Marathon)</h3>
+                <p>You've reached the grand finale, Level 7, which combines all the challenges you've faced thus far.
+                    Achieve victory with these comprehensive instructions:
+                <ul class="point">
+                    <li>Begin by clicking on any card to unveil its image.
+                    </li>
+                    <li>Commit both the picture and its initial location to memory.
+                    </li>
+                    <li>Proceed to match cards, navigate the grids, adapt to rotations, and anticipate grid swaps.
+                    </li>
+                    <li>To emerge victorious in this ultimate memory marathon, you must harness all your skills and
+                        cognitive abilities.</li>
+                </ul>
+                </p>
+                <a href="./level/indexlevel7.html"><button class="btn">Start Game <i class="fa fa-lock"
+                            style="font-size:17px"></i></button></a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="content">
+                <h3>Congratulations!</h3>
+                <p> After successfully completing all 7 levels, you've not only completed an engaging cognitive
+                    challenge but also significantly enhanced your memory and strategic thinking skills. Well done on
+                    your remarkable journey!</p>
+            </div>
+            <div class="image">
+                <img src="./image/mental9.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- project contents section ends -->
+
+    <!-- project contents section ends -->
+
+    <!-- team section starts  -->
+
+    <section id="team" class="team">
+
+        <h1 class="heading">our team</h1>
+
+        <div class="row">
+            <div class="card">
+                <div class="image">
+                    <img src="./image/SC sir.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Sanjay Chakraborty</h3>
+                    <span>Mentor</span>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/sanjay.chakraborty.182" class="fa fa-facebook-square"></a>
+                        <a href="https://www.linkedin.com/in/sanjay-chakraborty-90808a153/" target="blank"
+                            class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="./image/PritiPaul.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Priti Paul</h3>
+                    <span>Team Member</span>
+                    <div class="icons">
+                        <a href="https://github.com/pritipaul" target="blank" class="fab fa-github"></a>
+                        <a href="https://www.facebook.com/priti.paul.14811692/" class="fa fa-facebook-square"></a>
+                        <a href="https://www.linkedin.com/in/priti-paul-3aa930200/" target="blank"
+                            class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="./image/SoubhikAcharya.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Soubhik Acharya</h3>
+                    <span>Team Member</span>
+                    <div class="icons">
+                        <a href="https://github.com/Soubhik2002" target="blank" class="fab fa-github"></a>
+                        <a href="https://www.facebook.com/soubhik.acharya.1/" target="blank"
+                            class="fa fa-facebook-square"></a>
+                        <a href="https://www.instagram.com/Soubhik_8825/" target="blank" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- team section ends -->
+
+
+    <!-- FAQ section starts  -->
+
+    <section id="faq" class="faq">
+
+        <h1 class="heading">FAQs</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./image/faq-image.svg" alt="">
+            </div>
+
+            <div class="accordion-container">
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>What is the purpose of the cognitive game in your project?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>The cognitive game is designed to engage and stimulate memory, attention, and cognitive
+                            abilities in dementia patients. It offers an interactive experience to enhance their
+                            cognitive skills and resilience.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>How does your deep learning-based dementia prediction work?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Our deep learning algorithms analyze extensive datasets to predict dementia with remarkable
+                            accuracy. By identifying early indicators, we enable timely interventions, potentially
+                            improving patient outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>Who can benefit from your project?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Our project benefits dementia patients seeking cognitive improvement, caregivers looking for
+                            valuable resources and support, and researchers passionate about advancing dementia
+                            prediction technology.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>Is the cognitive game accessible for all dementia patients?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Yes, our game is tailored to accommodate varying levels of cognitive abilities. It offers
+                            adjustable difficulty levels, ensuring accessibility and engagement for a wide range of
+                            users.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>How can I get involved in your project?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>You can join our initiative by exploring the cognitive game, sharing it with those who may
+                            benefit, and participating in research collaborations. Together, we can make a difference in
+                            dementia care and prediction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section ends -->
+    
+
+    <!-- footer section starts  -->
+    <section class="footer">
+        <h1>Created by our team PS_CODER || all rights reserved.</h1>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- jquery file link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- custom js file link  -->
+
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
